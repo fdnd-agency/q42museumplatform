@@ -1,5 +1,5 @@
-# Afspraken over samenwerking: Squadpage
-> In dit document staan de afspraken over hoe wij samenwerken aan de squadpage. Door dezelfde werkwijze en conventies te gebruiken houden we het project overzichtelijk en behouden we consistentie.
+# Afspraken over samenwerking: Q42 Museumplatform
+> In dit document staan de afspraken over hoe wij samenwerken aan de website voor Q42. Door dezelfde werkwijze en conventies te gebruiken houden we het project overzichtelijk en behouden we consistentie.
  
 ## Teamafspraken & teamcanvas
  
@@ -8,12 +8,12 @@
  
 ### Gedeelde doelen
 - De basis van SvelteKit onder de knie krijgen.
-- kennis delen in de groep en deze toepassen
+- Kennis delen in de groep en deze toepassen
 - Elkaar ondersteunen bij het behalen van persoonlijke leerdoelen
  
 ### Teamafspraken
 - Elke lesdag houden we een korte standup
-- Taken en voortgang houden we bij in het [projectboard](https://github.com/users/meemo99/projects/12/views/1)
+- Taken en voortgang houden we bij in het [projectboard](https://github.com/orgs/fdnd-agency/projects/116)
 - Iedere taak heeft een duidelijke hoofdverantwoordelijke
 - We starten taken aan de hand van issues
 - Blockers communiceren we op tijd
@@ -23,6 +23,7 @@
 - We reviewen elkaars werk voordat het wordt gemerged
 - We ondersteunen elkaar bij onze persoonlijke leerdoelen.
 - Aan het einde van iedere week reflecteren we kort op onze samenwerking
+- Elke sprint wisselen we van Scrum Master
  
 ***
  
