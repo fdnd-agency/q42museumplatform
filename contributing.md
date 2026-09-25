@@ -4,7 +4,7 @@
 ## Teamafspraken & teamcanvas
  
 - ### Team canvas
- 
+ <img width="1113" height="782" alt="afbeelding" src="https://github.com/user-attachments/assets/ca64dfaa-4e9b-40ef-9e60-24ce095438b2" />
  
 ### Gedeelde doelen
 - De basis van SvelteKit onder de knie krijgen.
