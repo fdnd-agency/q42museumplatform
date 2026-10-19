@@ -12,7 +12,7 @@
 - Elkaar ondersteunen bij het behalen van persoonlijke leerdoelen
  
 ### Teamafspraken
-- Elke lesdag houden we een korte standup
+- Elke lesdag houden we voor de les (rond 13:45) een korte standup
 - Taken en voortgang houden we bij in het [projectboard](https://github.com/orgs/fdnd-agency/projects/116)
 - Iedere taak heeft een duidelijke hoofdverantwoordelijke
 - We starten taken aan de hand van issues
@@ -24,6 +24,7 @@
 - We ondersteunen elkaar bij onze persoonlijke leerdoelen.
 - Aan het einde van iedere week reflecteren we kort op onze samenwerking
 - Elke sprint wisselen we van Scrum Master
+- 
  
 ***
  
@@ -41,8 +42,12 @@ issue
 -> mergen
 -> done
 ```
- 
+
+### Atomic Design System 
+We houden het principe van [Atomic Design](https://github.com/fdnd-task/dont-repeat-yourself-component-library/wiki/component-as-a-building-block#2-atomic-design) aan als design system. 
+
 ### `issues`
+
 Voor iedere taak maken we een issue aan, bijvoorbeeld:
 ```
 [Feature]
