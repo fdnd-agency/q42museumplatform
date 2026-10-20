@@ -1,5 +1,21 @@
 # Afspraken over samenwerking: Q42 Museumplatform
 > In dit document staan de afspraken over hoe wij samenwerken aan de website voor Q42. Door dezelfde werkwijze en conventies te gebruiken houden we het project overzichtelijk en behouden we consistentie.
+
+## Inhoudsopgave
+- [Teamafspraken & teamcanvas](#teamafspraken--teamcanvas)
+  - [Team canvas](#team-canvas)
+  - [Gedeelde doelen](#gedeelde-doelen)
+  - [Teamafspraken](#teamafspraken)
+- [Workflow](#workflow)
+  - [Atomic Design System](#atomic-design-system)
+  - [Issues](#issues)
+  - [Issue template](#issue-template)
+  - [Branches](#branches)
+  - [Commits](#commits)
+  - [Pull request & review](#pull-request--review)
+- [Code conventies](#code-conventies)
+  - [Reflecteren op de samenwerking](#reflecteren-op-de-samenwerking)
+  - [Stand ups & communicatie](#stand-ups--communicatie)
  
 ## Teamafspraken & teamcanvas
  
@@ -183,4 +199,3 @@ iedereen benoemt:
 - Wat is mijn volgende stap?
 - Loop ik ergens op vast?
 - Heb ik hulp of feedback nodig?
- 
