@@ -21,12 +21,16 @@
 - Blockers communiceren we op tijd
 - We verdelen het werk zo dat iedereen bijdraagt aan alle fases van de dlc
 - We vragen en geven actief feedback
+- Er wordt op Teams tijdig gereageerd op berichten
 - We volgen de FDND code conventies
 - We reviewen elkaars werk voordat het wordt gemerged
 - We ondersteunen elkaar bij onze persoonlijke leerdoelen.
 - Aan het einde van iedere week reflecteren we kort op onze samenwerking
 - Elke sprint wisselen we van Scrum Master
-- 
+  - Sprint 14: Yassine
+  - Sprint 15: Tom
+  - Sprint 16: Oumaima
+
  
 ***
  
@@ -171,7 +175,7 @@ Aan het einde van iedere week bespreken we kort:
 - Wat willen we volgende week verbeteren?
  
 ### Stand ups & communicatie
-Op iedere lesdag houden we een korte stand up
+Op iedere lesdag houden we een korte stand up. We gebruiken hierbij ook het projectboard en lopen na wat er precies gedaan is. Dit is ook een moment om feedback aan elkaar te geven en te ontvangen.
  
 iedereen benoemt:
 - Waar werk ik aan?
