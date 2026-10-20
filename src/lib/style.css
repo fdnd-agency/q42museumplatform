@@ -12,4 +12,19 @@
 
     --color-correct: hsl(143, 51%, 67%);
     --color-incorrect: hsl(7, 100%, 75%);
+
+    /* Typografie */
+    --heading-display: 2.5rem;
+
+    --heading-h1: 1.875rem;
+    --heading-h2: 1.5625rem;
+    --heading-h3: 1.25rem;
+
+    --heading-year: 2rem;
+    --heading-quote: 1.15rem;
+
+    --body-lead: 1.25rem;
+    --body-body: 1.125rem;
+    --body-button: 1rem;
+    --body-small: 0.85rem;
 }
