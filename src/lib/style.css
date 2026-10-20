@@ -1,0 +1,15 @@
+:root {
+    /* Kleuren */
+    --color-primary: hsl(196, 37%, 16%);
+    --color-accent: hsl(48, 100%, 50%);
+    --color-surface: hsl(195, 36%, 21%);
+
+    --color-text: hsl(39, 51%, 91%);
+    --color-text-muted: hsl(190, 9%, 75%);
+
+    --color-border-button: hsl(195, 15%, 60%);
+    --color-border: hsl(195, 25%, 30%);
+
+    --color-correct: hsl(143, 51%, 67%);
+    --color-incorrect: hsl(7, 100%, 75%);
+}
