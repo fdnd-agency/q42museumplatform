@@ -4,6 +4,8 @@
 ## Teamafspraken & teamcanvas
  
 - ### Team canvas
+  <img width="1184" height="770" alt="image" src="https://github.com/user-attachments/assets/52d16bc3-5763-436f-aa15-5ed120ec740f" />
+
  
  
 ### Gedeelde doelen
