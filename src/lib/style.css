@@ -28,3 +28,31 @@
     --body-button: 1rem;
     --body-small: 0.85rem;
 }
+
+@font-face {
+    font-family: "Inter";
+    src: url("assets/fonts/InterRegular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("assets/fonts/InterBold.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Larken";
+    src: url("assets/fonts/LarkenRegular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Larken";
+    src: url("assets/fonts/LarkenBold.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}
