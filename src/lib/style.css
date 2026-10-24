@@ -67,3 +67,11 @@
     font-weight: 700;
     font-display: swap;
 }
+
+@font-face {
+    font-family: "LarkenItalic";
+    src: url("assets/fonts/LarkenRegular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
