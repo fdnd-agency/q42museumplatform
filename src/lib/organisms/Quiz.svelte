@@ -1,9 +1,11 @@
 <script>
+	import { QuizQuestion } from '$lib/index.js'
+
 	let { questions } = $props()
 </script>
 
 <section>
 	{#each questions as question}
-		<p>{question.question}</p>
+		<QuizQuestion {question} />
 	{/each}
 </section>
