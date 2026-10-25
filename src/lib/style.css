@@ -1,0 +1,77 @@
+:root {
+    /* Kleuren */
+    --color-primary: hsl(196, 37%, 16%);
+    --color-accent: hsl(48, 100%, 50%);
+
+    --color-text: hsl(39, 51%, 91%);
+    --color-text-muted: hsl(190, 9%, 75%);
+
+    --color-border-button: hsl(195, 15%, 60%);
+    --color-border: hsl(195, 25%, 30%);
+
+    /* Quiz */
+    --color-quiz-card-dark: hsl(0, 0%, 85%);
+    --color-quiz-card-light: hsl(196, 15%, 40%);
+
+    --color-quiz-answer-border-dark: hsl(196, 37%, 40%);
+    --color-quiz-answer-border-light: hsl(48, 100%, 92%); /* Dit is ook de unselected border color voor light mode */
+
+    --color-quiz-answer-unselected-border-dark: hsl(195, 25%, 70%);
+    --color-quiz-answer-selected-inner-dark: hsl(36, 50%, 96%);
+
+    --color-correct-dark: hsl(143, 51%, 17%);
+    --color-correct-light: hsl(143, 51%, 67%);
+    --color-incorrect-dark: hsl(7, 100%, 38%);
+    --color-incorrect-light: hsl(7, 100%, 75%);
+
+    /* Typografie */
+    --heading-display: 2.5rem;
+
+    --heading-h1: 1.875rem;
+    --heading-h2: 1.5625rem;
+    --heading-h3: 1.25rem;
+
+    --heading-year: 2rem;
+    --heading-quote: 1.15rem;
+
+    --body-lead: 1.25rem;
+    --body-body: 1.125rem;
+    --body-button: 1rem;
+    --body-small: 0.85rem;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("assets/fonts/InterRegular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("assets/fonts/InterBold.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Larken";
+    src: url("assets/fonts/LarkenRegular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Larken";
+    src: url("assets/fonts/LarkenBold.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "LarkenItalic";
+    src: url("assets/fonts/LarkenRegular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
