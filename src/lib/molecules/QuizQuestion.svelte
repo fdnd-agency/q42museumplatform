@@ -1,4 +1,6 @@
 <script>
+	import { AnswerOption } from '$lib/index.js'
+
 	let { question } = $props()
 </script>
 
@@ -6,8 +8,8 @@
 	<fieldset>
 		<legend>{question.question}</legend>
 
-		{#each question.options as option}
-			<p>{option.key}. {option.answer}</p>
+		{#each question.options as { key, answer }}
+			<AnswerOption name="question-{question.id}" {key} {answer} />
 		{/each}
 	</fieldset>
 
