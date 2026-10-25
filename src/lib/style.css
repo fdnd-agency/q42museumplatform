@@ -75,3 +75,8 @@
     font-style: italic;
     font-display: swap;
 }
+
+body {
+    background-color: var(--color-primary);
+    margin: 0;
+}
