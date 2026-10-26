@@ -3,7 +3,7 @@
 </script>
 
 <label>
-	<input type="radio" {name} value={key} />
+	<input type="radio" {name} value={key} required />
 	<span>{key}</span>
 	{answer}
 </label>
