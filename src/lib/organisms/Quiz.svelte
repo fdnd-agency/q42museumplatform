@@ -7,7 +7,7 @@
 
 <!-- Toont één QuizQuestion per vraag -->
 <section>
-	{#each questions as question}
-		<QuizQuestion {question} />
+	{#each questions as question, index}
+		<QuizQuestion {question} number={index + 1} />
 	{/each}
 </section>
