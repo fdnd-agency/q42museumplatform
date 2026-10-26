@@ -5,7 +5,28 @@
 </script>
 
 <header>
-	<Logo />
-	<NavLink />
-	<Score />
+	<article>
+		<Logo />
+	</article>
+	<article>
+		<NavLink />
+		<Score />
+	</article>
 </header>
+
+<style>
+	header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 10rem 1rem 10rem;
+	}
+
+	article {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 1.5rem;
+	}
+</style>

@@ -8,7 +8,7 @@
         color: var(--color-text);
         margin: 0;
         width: max-content;
-        padding: 0.4rem;
+        padding: 0.6rem;
         border-bottom: 2px solid var(--color-accent);
     }
 </style>
