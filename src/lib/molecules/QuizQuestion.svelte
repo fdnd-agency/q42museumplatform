@@ -55,10 +55,38 @@
 	<output>
 		{#if isAnswered}
 			{#if isCorrect}
-				<p>{chosenKey} is goed.{question.explanation_correct}</p>
+				<p>{chosenKey} is goed. {question.explanation_correct}</p>
 			{:else}
-				<p>{chosenKey} is fout.{question.explanation_wrong}</p>
+				<p>{chosenKey} is fout. {question.explanation_wrong}</p>
 			{/if}
 		{/if}
 	</output>
 </form>
+
+<style>
+	
+	form {
+		--_card-background: var(--color-quiz-card-dark);
+		--_card-text: var(--color-primary);
+
+		background: var(--_card-background);
+		color: var(--_card-text);
+		padding: 1.5rem;
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	fieldset {
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+
+</style>
