@@ -14,7 +14,8 @@
     --color-quiz-card-light: hsl(196, 15%, 40%);
 
     --color-quiz-answer-border-dark: hsl(196, 37%, 40%);
-    --color-quiz-answer-border-light: hsl(48, 100%, 92%); /* Dit is ook de unselected border color voor light mode */
+    --color-quiz-answer-border-light: hsl(48, 100%, 92%);
+    /* Dit is ook de unselected border color voor light mode */
 
     --color-quiz-answer-unselected-border-dark: hsl(195, 25%, 70%);
     --color-quiz-answer-selected-inner-dark: hsl(36, 50%, 96%);
@@ -38,6 +39,14 @@
     --body-body: 1.125rem;
     --body-button: 1rem;
     --body-small: 0.85rem;
+
+    /* Spacing */
+    --spacing-xs: 8px;
+    --spacing-s: 16px;
+    --spacing-m: 24px;
+    --spacing-l: 32px;
+    --spacing-xl: 48px;
+    --spacing-xxl: 80px;
 }
 
 @font-face {
