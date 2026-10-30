@@ -36,5 +36,7 @@
     }
     img {
         object-fit: contain;
+        max-inline-size: 100%;
+        block-size: auto;
     }
 </style>
