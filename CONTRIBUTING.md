@@ -46,6 +46,10 @@
   - Sprint 14: Yassine
   - Sprint 15: Tom
   - Sprint 16: Oumaima
+  - Sprint 17:
+  - Sprint 18:
+- Iedere sprint spelen we Planning Poker om zo de taken goed af te wegen, zodat we tijdig grote taken kunnen verkleinen
+- Na elke Stand Up lopen we het Projectboard na om eventuele Issues te sluiten of verplaatsen van uit de Backlog
 
  
 ***
