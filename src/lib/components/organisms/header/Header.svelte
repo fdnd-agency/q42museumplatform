@@ -21,6 +21,10 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 1rem 10rem 1rem 10rem;
+
+		@media (max-width: 48rem) {
+			padding: 1rem 1.5rem;
+		}
 	}
 
 	article {

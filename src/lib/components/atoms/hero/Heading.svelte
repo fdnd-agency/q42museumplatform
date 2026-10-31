@@ -2,7 +2,7 @@
 
 <style>
     h1 {
-        max-width: 200px;
+        max-width: 400px;
         font-size: var(--heading-display);
     }
 </style>

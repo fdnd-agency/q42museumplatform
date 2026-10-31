@@ -5,8 +5,11 @@
 <img src={image} width="400" height="400" alt="Grote Elektriseer Machine">
 
 <style>
-    img {
-        height: 225px;
-        object-fit: cover;
-    }
+	img {
+		display: block;
+		width: 100%;
+		max-width: 400px;
+		height: 225px;
+		object-fit: cover;
+	}
 </style>
