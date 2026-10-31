@@ -13,7 +13,6 @@ export async function load() {
     const { data: questions } = await questionsResponse.json();
 
     console.log(eras)
-    // console.log(questions)
 
     return { eras, questions }
 }
