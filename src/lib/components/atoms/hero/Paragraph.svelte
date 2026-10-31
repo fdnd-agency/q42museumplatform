@@ -3,5 +3,9 @@
 <style>
     p {
         max-width: 400px;
+
+        @media (max-width: 48rem) {
+            display: none;
+        }
     }
 </style>
