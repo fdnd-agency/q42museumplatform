@@ -33,12 +33,6 @@
         );
     };
 
-// Kiest de class voor een antwoord: alleen het gekozen antwoord krijgt correct of incorrect.
-    const getResult = (key) => {
-        if ( key !== chosenKey ) return "";
-        if ( isCorrect ) return "correct";
-        return "incorrect";
-    }
 </script>
 
 <!-- Voert checkAnswer uit als je op Controleer klikt -->
