@@ -1,28 +1,68 @@
 :root {
     /* Kleuren */
-    --color-primary: hsl(196, 37%, 16%);
-    --color-accent: hsl(48, 100%, 50%);
+    --primary-h: 196;
+    --primary-s: 37%;
+    --primary-l: 16%;
+    --accent-h: 48;
+    --accent-s: 100%;
+    --accent-l: 50%;
+    --text-h: 39;
+    --text-s: 51%;
+    --text-l: 91%;
+    --text-muted-h: 190;
+    --text-muted-s: 9%;
+    --text-muted-l: 75%;
+    --border-button-h: 195;
+    --border-button-s: 15%;
+    --border-button-l: 60%;
+    --border-h: 195;
+    --border-s: 25%;
+    --border-l: 30%;
+    --neutral-h: 0;
+    --neutral-s: 0%;
+    --quiz-card-dark-l: 85%;
+    --quiz-card-light-h: 196;
+    --quiz-card-light-s: 15%;
+    --quiz-card-light-l: 40%;
+    --quiz-answer-border-dark-l: 40%;
+    --quiz-answer-border-light-l: 92%;
+    --quiz-answer-unselected-border-dark-l: 70%;
+    --quiz-answer-selected-inner-h: 36;
+    --quiz-answer-selected-inner-s: 50%;
+    --quiz-answer-selected-inner-l: 96%;
+    --correct-h: 143;
+    --correct-s: 51%;
+    --correct-dark-l: 17%;
+    --correct-light-l: 67%;
+    --incorrect-h: 7;
+    --incorrect-s: 100%;
+    --incorrect-dark-l: 38%;
+    --incorrect-light-l: 75%;
 
-    --color-text: hsl(39, 51%, 91%);
-    --color-text-muted: hsl(190, 9%, 75%);
+    --color-primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
 
-    --color-border-button: hsl(195, 15%, 60%);
-    --color-border: hsl(195, 25%, 30%);
+    --color-text: hsl(var(--text-h), var(--text-s), var(--text-l));
+    --color-text-muted: hsl(var(--text-muted-h), var(--text-muted-s), var(--text-muted-l));
+
+    --color-border-button: hsl(var(--border-button-h), var(--border-button-s), var(--border-button-l));
+    --color-border: hsl(var(--border-h), var(--border-s), var(--border-l));
 
     /* Quiz */
-    --color-quiz-card-dark: hsl(0, 0%, 85%);
-    --color-quiz-card-light: hsl(196, 15%, 40%);
+    --color-quiz-card-dark: hsl(var(--neutral-h), var(--neutral-s), var(--quiz-card-dark-l));
+    --color-quiz-card-light: hsl(var(--quiz-card-light-h), var(--quiz-card-light-s), var(--quiz-card-light-l));
 
-    --color-quiz-answer-border-dark: hsl(196, 37%, 40%);
-    --color-quiz-answer-border-light: hsl(48, 100%, 92%); /* Dit is ook de unselected border color voor light mode */
+    --color-quiz-answer-border-dark: hsl(var(--primary-h), var(--primary-s), var(--quiz-answer-border-dark-l));
+    --color-quiz-answer-border-light: hsl(var(--accent-h), var(--accent-s), var(--quiz-answer-border-light-l));
+    /* Dit is ook de unselected border color voor light mode */
 
-    --color-quiz-answer-unselected-border-dark: hsl(195, 25%, 70%);
-    --color-quiz-answer-selected-inner-dark: hsl(36, 50%, 96%);
+    --color-quiz-answer-unselected-border-dark: hsl(var(--border-h), var(--border-s), var(--quiz-answer-unselected-border-dark-l));
+    --color-quiz-answer-selected-inner-dark: hsl(var(--quiz-answer-selected-inner-h), var(--quiz-answer-selected-inner-s), var(--quiz-answer-selected-inner-l));
 
-    --color-correct-dark: hsl(143, 51%, 17%);
-    --color-correct-light: hsl(143, 51%, 67%);
-    --color-incorrect-dark: hsl(7, 100%, 38%);
-    --color-incorrect-light: hsl(7, 100%, 75%);
+    --color-correct-dark: hsl(var(--correct-h), var(--correct-s), var(--correct-dark-l));
+    --color-correct-light: hsl(var(--correct-h), var(--correct-s), var(--correct-light-l));
+    --color-incorrect-dark: hsl(var(--incorrect-h), var(--incorrect-s), var(--incorrect-dark-l));
+    --color-incorrect-light: hsl(var(--incorrect-h), var(--incorrect-s), var(--incorrect-light-l));
 
     /* Typografie */
     --heading-display: 2.5rem;
