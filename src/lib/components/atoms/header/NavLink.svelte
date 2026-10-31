@@ -10,5 +10,9 @@
         width: max-content;
         padding: 0.6rem;
         border-bottom: 2px solid var(--color-accent);
+
+        @media (max-width: 48rem) {
+            display: none;
+        }
     }
 </style>
