@@ -42,8 +42,7 @@
 
 </script>
 
-<!-- Voert checkAnswer uit als je op Controleer klikt -->
-<form onsubmit={checkAnswer}>
+<form method="POST" action="?/checkAnswer" onsubmit={checkAnswer}>
     <header>
         <p>Vraag {number}</p>
         <p>{status}</p>
@@ -62,7 +61,7 @@
         {/each}
     </fieldset>
 
-    <button type="submit">Controleer</button>
+    <button type="submit" name="questionId" value={question.id}>Controleer</button>
 
     <output>
         {#if isAnswered}
