@@ -101,16 +101,18 @@
         gap: 1rem;
     }
 
-    .correct {
+    output p {
         background: var(--color-quiz-answer-selected-inner-dark);
-        border: 3px solid var(--color-correct-dark);
+        border: 3px solid;
         padding: 1rem;
     }
 
+    .correct {
+        border-color: var(--color-correct-dark);
+    }
+
     .incorrect {
-        background: var(--color-quiz-answer-selected-inner-dark);
-        border: 3px solid var(--color-incorrect-dark);
-        padding: 1rem;
+        border-color: var(--color-incorrect-dark);
     }
 
     button {
@@ -118,7 +120,6 @@
         padding: 0.75rem 2rem;
         background: var(--color-border);
         color: var(--color-white);
-        border: none;
         cursor: pointer;
         font-family: inter;
         font-weight: 700;
@@ -126,7 +127,7 @@
 
         &:hover {
             background: var(--color-button-hover);
-            border: 3px solid var(--color-button-hover);
+            border-color: var(--color-button-hover);
         }
 
         &:active {
