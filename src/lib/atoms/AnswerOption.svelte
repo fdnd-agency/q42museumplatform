@@ -1,8 +1,9 @@
 <script>
-    let { name, key, answer } = $props();
+    let { name, key, answer, result } = $props();
 </script>
 
-<label>
+<!-- Krijgt de class correct of incorrect als dit het gecontroleerde antwoord is -->
+<label class={result}>
     <input type="radio" {name} value={key} required />
     <span>{key}</span>
     {answer}
@@ -23,6 +24,16 @@
         &:has(input:checked) {
             border-color: var(--color-quiz-answer-border-dark);
             background: var(--color-quiz-answer-selected-inner-dark);
+        }
+
+        &.correct:has(input:checked) {
+            border-color: var(--color-correct-dark);
+            box-shadow: inset 0 0 0 .75px var(--color-correct-dark);
+        }
+
+        &.incorrect:has(input:checked) {
+            border-color: var(--color-incorrect-dark);
+            box-shadow: inset 0 0 0 .75px var(--color-incorrect-dark);
         }
 
         &:has(input:focus-visible) {

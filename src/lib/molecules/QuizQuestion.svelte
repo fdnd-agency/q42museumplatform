@@ -33,6 +33,13 @@
         );
     };
 
+    // Geeft per antwoord terug of het goed of fout is, alleen voor de letter die je hebt gecontroleerd
+    const getResult = (key) => {
+        if (key !== chosenKey) return "";
+        if (isCorrect) return "correct";
+        return "incorrect";
+    };
+
 </script>
 
 <!-- Voert checkAnswer uit als je op Controleer klikt -->
@@ -46,7 +53,12 @@
         <legend>{question.question}</legend>
 
         {#each question.options as { key, answer }}
-            <AnswerOption name="question-{question.id}" {key} {answer} />
+            <AnswerOption
+                name="question-{question.id}"
+                {key}
+                {answer}
+                result={getResult(key)}
+            />
         {/each}
     </fieldset>
 
