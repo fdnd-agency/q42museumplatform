@@ -16,3 +16,15 @@ export async function load() {
 
     return { eras, questions }
 }
+
+export const actions = {
+    // Krijgt het antwoord binnen als je zonder JavaScript op Controleer klikt
+    checkAnswer: async ({ request }) => {
+        const formData = await request.formData();
+        const questionId = Number(formData.get("questionId"));
+        const chosenKey = formData.get(`question-${questionId}`);
+
+        // Stuurt terug welk antwoord er bij welke vraag is gekozen
+        return { questionId, chosenKey };
+    }
+};
