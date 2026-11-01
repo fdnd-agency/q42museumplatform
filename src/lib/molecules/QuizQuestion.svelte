@@ -83,7 +83,19 @@
 
 <style>
     form {
-        background: var(--color-quiz-card-dark);
+        /*kleuren voor dark mode */
+        --_card-background: var(--color-quiz-card-dark);
+        --_text-color: var(--color-primary);
+        --_feedback-background: var(--color-quiz-answer-selected-inner-dark);
+        --_correct-color: var(--color-correct-dark);
+        --_incorrect-color: var(--color-incorrect-dark);
+        --_button-background: var(--color-border);
+        --_button-color: var(--color-white);
+        --_button-hover-background: var(--color-button-hover);
+        --_button-active-background: var(--color-white);
+
+        background: var(--_card-background);
+        color: var(--_text-color);
         padding: 1.5rem;
         font-size: 1rem;
         line-height: 1.6;
@@ -96,10 +108,11 @@
         justify-content: space-between;
         gap: 1rem;
         margin-bottom: 1rem;
+        font-weight: 700;
     }
 
     legend {
-        font-weight: bold;
+        font-weight: 700;
         margin-bottom: 1rem;
         font-size: 1.4rem;
     }
@@ -114,37 +127,58 @@
     }
 
     output p {
-        background: var(--color-quiz-answer-selected-inner-dark);
+        background: var(--_feedback-background);
         border: 3px solid;
         padding: 1rem;
     }
 
     .correct {
-        border-color: var(--color-correct-dark);
+        border-color: var(--_correct-color);
     }
 
     .incorrect {
-        border-color: var(--color-incorrect-dark);
+        border-color: var(--_incorrect-color);
     }
 
     button {
         margin-top: 1rem;
         padding: 0.75rem 2rem;
-        background: var(--color-border);
-        color: var(--color-white);
+        background: var(--_button-background);
+        color: var(--_button-color);
         cursor: pointer;
         font-family: inter;
         font-weight: 700;
-        border: 3px solid var(--color-border);
+        border: 3px solid var(--_button-background);
 
         &:hover {
-            background: var(--color-button-hover);
-            border-color: var(--color-button-hover);
+            background: var(--_button-hover-background);
+            border-color: var(--_button-hover-background);
         }
 
         &:active {
-            background: var(--color-white);
+            background: var(--_button-active-background);
+            border-color: var(--_button-active-background);
             color: var(--color-primary);
+        }
+
+        &:focus-visible {
+            outline: 3px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+    }
+
+    /*kleuren voor light mode */
+    @media (prefers-color-scheme: light) {
+        form {
+            --_card-background: var(--color-quiz-card-light);
+            --_text-color: var(--color-quiz-answer-border-light);
+            --_feedback-background: var(--color-primary);
+            --_correct-color: var(--color-correct-light);
+            --_incorrect-color: var(--color-incorrect-light);
+            --_button-background: var(--color-quiz-answer-border-light);
+            --_button-color: var(--color-primary);
+            --_button-hover-background: var(--color-white);
+            --_button-active-background: var(--color-accent);
         }
     }
 </style>
