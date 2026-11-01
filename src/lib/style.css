@@ -126,3 +126,9 @@
 body {
 	background: var(--color-primary);
 }
+
+@media (prefers-color-scheme: light) {
+	body {
+		background: var(--color-text);
+	}
+}
