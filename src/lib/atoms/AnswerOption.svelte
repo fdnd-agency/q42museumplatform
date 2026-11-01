@@ -1,10 +1,11 @@
 <script>
-    let { name, key, answer, result } = $props();
+    let { name, key, answer, result = "" } = $props();
 </script>
 
 <!-- Krijgt de class correct of incorrect als dit het gecontroleerde antwoord is -->
 <label class={result}>
-    <input type="radio" {name} value={key} required />
+    <!-- Blijft aangevinkt na het herladen zonder javascript, als dit het gecontroleerde antwoord is -->
+    <input type="radio" {name} value={key} required checked={result !== ""} />
     <span>{key}</span>
     {answer}
 </label>

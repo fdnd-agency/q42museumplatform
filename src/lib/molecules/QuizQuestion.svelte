@@ -1,11 +1,11 @@
 <script>
     import { AnswerOption } from "$lib/index.js";
 
-    // Krijgt één vraag binnen, met de antwoorden en de uitleg, en het nummer van de vraag
-    let { question, number } = $props();
+    // Krijgt één vraag binnen, met de antwoorden en de uitleg, het nummer van de vraag, en de letter die zonder javascript is gecontroleerd
+    let { question, number, checkedKey = "" } = $props();
 
-    // Houdt bij welke letter er gekozen is, leeg tot je op Controleer klikt
-    let chosenKey = $state("");
+    // Houdt bij welke letter er gekozen is, begint met de letter van de server en verandert als je met javascript op Controleer klikt
+    let chosenKey = $derived(checkedKey);
 
     // Zoekt de letter van het goede antwoord, alleen dat antwoord heeft is_correct
     const correctKey = $derived(
