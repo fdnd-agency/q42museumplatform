@@ -102,13 +102,13 @@
     }
 
     .correct {
-        background: hsl(36, 50%, 96%);
+        background: var(--color-quiz-answer-selected-inner-dark);
         border: 3px solid var(--color-correct-dark);
         padding: 1rem;
     }
 
     .incorrect {
-        background: hsl(36, 50%, 96%);
+        background: var(--color-quiz-answer-selected-inner-dark);
         border: 3px solid var(--color-incorrect-dark);
         padding: 1rem;
     }
@@ -117,7 +117,7 @@
         margin-top: 1rem;
         padding: 0.75rem 2rem;
         background: var(--color-border);
-        color: white;
+        color: var(--color-white);
         border: none;
         cursor: pointer;
         font-family: inter;
@@ -125,11 +125,12 @@
         border: 3px solid var(--color-border);
 
         &:hover {
-            background: hsl(195, 25%, 16%);
+            background: var(--color-button-hover);
+            border: 3px solid var(--color-button-hover);
         }
 
         &:active {
-            background: hsl(0, 0%, 100%);
+            background: var(--color-white);
             color: var(--color-primary);
         }
     }

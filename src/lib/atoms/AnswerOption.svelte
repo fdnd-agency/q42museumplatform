@@ -30,12 +30,12 @@
         }
 
         &:hover {
-            background: hsl(0, 0%, 77%);
+            background: var(--color-quiz-answer-hover);
         }
 
         &:active {
             background: var(--color-primary);
-            color: hsl(0, 0%, 100%);
+            color: var(--color-white);
         }
     }
 
@@ -50,7 +50,7 @@
         align-items: center;
         justify-content: center;
         background: var(--color-border);
-        color: white;
+        color: var(--color-white);
     }
 
     input {
