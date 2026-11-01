@@ -15,13 +15,14 @@
         align-items: center;
         gap: 0.75rem;
         padding: 0.75rem 1rem;
-        border: 3px solid var(--color-quiz-answer-border-dark);
+        border: 3px solid var(--color-quiz-answer-unselected-border-dark);
         cursor: pointer;
         font-family: inter;
         font-weight: 700;
 
         &:has(input:checked) {
-            border-color: var(--color-border);
+            border-color: var(--color-quiz-answer-border-dark);
+            background: var(--color-quiz-answer-selected-inner-dark);
         }
 
         &:has(input:focus-visible) {
