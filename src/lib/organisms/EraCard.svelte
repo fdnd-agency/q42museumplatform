@@ -23,11 +23,14 @@
         color: var(--color-text);
     }
     p {
+        line-height: 1.4;
         font-size: var(--body-body);
         color: var(--color-text);
+        margin: 1lh;
     }
     article {
         margin: var(--spacing-s);
+        max-width: 75ch;
     }
     blockquote {
         margin: var(--spacing-m);
