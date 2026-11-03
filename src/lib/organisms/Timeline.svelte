@@ -7,11 +7,13 @@
 <main>
     <ol>
         {#each eras as era}
-            <li class="era">
-                <EraCard {era} />
-            </li>
-            <li class="timeline">
-                <Year year={era.start_year} />
+            <li>
+                <div class="era">
+                    <EraCard {era} />
+                </div>
+                <div class="timeline">
+                    <Year year={era.start_year} />
+                </div>
             </li>
         {/each}
     </ol>
@@ -19,13 +21,15 @@
 
 <style>
     li {
-        width: 50%;
+        display: grid;
+        grid-template-columns: subgrid;
+        grid-column: 1 /-1;
         list-style: none;
         color: var(--color-text);
     }
     ol {
         display: grid;
-        grid-template-columns: 1fr 10rem 1fr;
+        grid-template-columns: 1fr 5rem 1fr;
         margin: var(--spacing-l);
         list-style: none;
     }
