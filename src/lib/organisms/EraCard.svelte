@@ -8,10 +8,18 @@
     <p>{era.content_blocks[0].text}</p>
     <blockquote>{era.content_blocks[1].text}</blockquote>
     <picture>
+        <source
+            srcset={`https://fdnd-agency.directus.app/assets/${era.cover}?width=500&height=400&format=avif`}
+            type="image/avif"
+        />
+        <source
+            srcset={`https://fdnd-agency.directus.app/assets/${era.cover}?width=500&height=400&format=webp`}
+            type="image/webp"
+        />
         <img
-            src={`https://fdnd-agency.directus.app/assets/${era.cover}`}
-            width="100%"
-            height="400px"
+            src={`https://fdnd-agency.directus.app/assets/${era.cover}?width=500&height=400&`}
+            width="500"
+            height="400"
             alt=""
         />
     </picture>
@@ -38,7 +46,7 @@
         color: var(--color-text);
     }
     img {
-        object-fit: contain;
+        object-fit: cover;
         max-inline-size: 100%;
         block-size: auto;
     }
