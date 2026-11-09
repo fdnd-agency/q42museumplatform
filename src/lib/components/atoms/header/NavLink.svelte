@@ -2,7 +2,7 @@
 
 <style>
     p {
-        font-family: Inter;
+        font-family: Inter, Arial, Helvetica, sans-serif;
         font-size: var(--body-button);
         font-weight: 700;
         color: var(--color-text);

@@ -17,7 +17,7 @@
 		margin-top: 50px;
 		gap: 2rem;
 		color: var(--color-text);
-		font-family: Larken;
+		font-family: Larken, Arial, Helvetica, sans-serif;
 		padding: 1rem 10rem;
 
 		@media (max-width: 48rem) {

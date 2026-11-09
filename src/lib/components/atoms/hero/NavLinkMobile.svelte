@@ -3,7 +3,7 @@
 <style>
     p {
         text-transform: uppercase;
-        font-family: Inter;
+        font-family: Inter, Arial, Helvetica, sans-serif;
         font-weight: 700;
         color: var(--color-accent);
         display: none;
