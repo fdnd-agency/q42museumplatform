@@ -2,19 +2,26 @@
 	import image from '$lib/assets/Electriseerm_001.jpg';
 </script>
 
-<img src={image} width="400" height="400" alt="Grote Elektriseer Machine">
+<picture>
+	<img src={image} width="400" height="400" alt="Grote Elektriseer Machine">
+</picture>
 
 <style>
+	picture {
+		width: 400px;
+		min-width: 200px;
+		height: 300px;
+	}
+
 	img {
 		display: block;
 		width: 100%;
-		max-width: 400px;
-		height: 225px;
+		height: 100%;
 		object-fit: cover;
-        border-radius: 10px;
+		border-radius: 10px;
 
-        @media (max-width: 48rem) {
-            display: none;
-        }
+		@media (max-width: 48rem) {
+			display: none;
+		}
 	}
 </style>
