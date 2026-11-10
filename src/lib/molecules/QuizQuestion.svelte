@@ -1,11 +1,15 @@
 <script>
     import { AnswerOption } from "$lib/index.js";
+    import {tick} from "svelte";
 
     // Krijgt één vraag binnen, met de antwoorden en de uitleg, het nummer van de vraag, en de letter die zonder javascript is gecontroleerd
     let { question, number, checkedKey = "" } = $props();
 
     // Houdt bij welke letter er gekozen is, begint met de letter van de server en verandert als je met javascript op Controleer klikt
     let chosenKey = $derived(checkedKey);
+
+    // Onthoudt het output element om er later naartoe te kunnen scrollen
+    let output;
 
     // Zoekt de letter van het goede antwoord, alleen dat antwoord heeft is_correct
     const correctKey = $derived(
@@ -24,13 +28,20 @@
     });
 
     // Onthoudt welk antwoord is aangevinkt als je op Controleer klikt
-    const checkAnswer = (event) => {
+    const checkAnswer = async (event) => {
         // Voorkomt dat de pagina ververst
         event.preventDefault();
+         
+        
 
         chosenKey = new FormData(event.currentTarget).get(
             `question-${question.id}`,
         );
+        
+        // wacht tot de uitleg op het scherm staat
+        await tick();
+        // scrollt naar de output 
+        output.scrollIntoView({ behavior: "smooth", block: "nearest" });
     };
 
     // Geeft per antwoord terug of het goed of fout is, alleen voor de letter die je hebt gecontroleerd
@@ -63,7 +74,7 @@
 
     <button type="submit" name="questionId" value={question.id}>Controleer</button>
 
-    <output>
+    <output bind:this={output}>
         {#if isAnswered}
             {#if isCorrect}
                 <p class="correct">
@@ -123,6 +134,11 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+    }
+
+    output {
+        display: block;
+        scroll-margin-bottom: 2rem;
     }
 
     output p {
