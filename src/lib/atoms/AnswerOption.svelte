@@ -46,7 +46,7 @@
             box-shadow: inset 0 0 0 .75px var(--_incorrect-color);
         }
 
-        &:has(input:focus-visible) {
+        &:has(input:focus) {
             outline: 3px solid var(--color-accent);
             outline-offset: 2px;
         }
