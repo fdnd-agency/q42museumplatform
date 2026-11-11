@@ -85,6 +85,14 @@
     --body-body: 1.125rem;
     --body-button: 1rem;
     --body-small: 0.85rem;
+
+    /* Spacing */
+    --spacing-xs: 8px;
+    --spacing-s: 16px;
+    --spacing-m: 24px;
+    --spacing-l: 32px;
+    --spacing-xl: 48px;
+    --spacing-xxl: 80px;
 }
 
 @font-face {
@@ -121,6 +129,12 @@
     font-weight: 400;
     font-style: italic;
     font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {

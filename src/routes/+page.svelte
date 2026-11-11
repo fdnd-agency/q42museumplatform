@@ -1,8 +1,10 @@
 <script>
 	import { Quiz } from '$lib/index.js'
+	import Timeline from '$lib/organisms/Timeline.svelte'
 
 	let { data, form } = $props()
-	const { questions } = $derived(data)
+	const { eras, questions } = $derived(data)
 </script>
 
+<Timeline {eras} />
 <Quiz {questions} checkedAnswer={form} />
