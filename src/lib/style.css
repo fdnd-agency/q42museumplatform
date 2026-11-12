@@ -146,3 +146,8 @@ body {
 		background: var(--color-text);
 	}
 }
+
+header {
+    background-color: var(--color-primary);
+    border-bottom: 2px solid var(--color-border);
+}
