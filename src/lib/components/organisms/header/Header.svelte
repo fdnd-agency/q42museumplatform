@@ -21,6 +21,8 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 1rem 10rem 1rem 10rem;
+		position: sticky;
+		top: 0;
 
 		@media (max-width: 48rem) {
 			padding: 1rem 1.5rem;
