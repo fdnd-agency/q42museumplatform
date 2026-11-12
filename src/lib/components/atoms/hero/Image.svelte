@@ -3,14 +3,18 @@
 </script>
 
 <picture>
-	<img src={image} width="400" height="400" alt="Grote Elektriseer Machine">
+	<img src={image} width="500" height="400" alt="Grote Elektriseer Machine">
 </picture>
 
 <style>
 	picture {
-		width: 400px;
+		width: 500px;
 		min-width: 200px;
-		height: 300px;
+		height: 400px;
+		
+		@media (max-width: 48rem) {
+			display: none;
+		}
 	}
 
 	img {
@@ -19,9 +23,5 @@
 		height: 100%;
 		object-fit: cover;
 		border-radius: 10px;
-
-		@media (max-width: 48rem) {
-			display: none;
-		}
 	}
 </style>
