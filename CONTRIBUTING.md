@@ -30,7 +30,7 @@
 - Elkaar ondersteunen bij het behalen van persoonlijke leerdoelen
  
 ### Teamafspraken
-- Elke lesdag houden we voor de les (rond 13:45) een korte standup
+- Elke lesdag houden we voor de les (rond 13:45) een korte standup(behalve vrijdag We-Love-Web--> na de we-love-web(14:00), voor de les, anders tussendoor)
 - Taken en voortgang houden we bij in het [projectboard](https://github.com/orgs/fdnd-agency/projects/116)
 - Iedere taak heeft een duidelijke hoofdverantwoordelijke
 - We starten taken aan de hand van issues
