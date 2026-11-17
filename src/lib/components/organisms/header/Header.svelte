@@ -23,6 +23,7 @@
 		padding: 1rem 10rem 1rem 10rem;
 		position: sticky;
 		top: 0;
+		z-index: 100;
     	background-color: var(--color-primary);
     	border-bottom: 2px solid var(--color-border);
 
