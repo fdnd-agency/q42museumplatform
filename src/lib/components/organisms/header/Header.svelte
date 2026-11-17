@@ -23,6 +23,8 @@
 		padding: 1rem 10rem 1rem 10rem;
 		position: sticky;
 		top: 0;
+    	background-color: var(--color-primary);
+    	border-bottom: 2px solid var(--color-border);
 
 		@media (max-width: 48rem) {
 			padding: 1rem 1.5rem;
