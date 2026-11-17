@@ -20,6 +20,10 @@
 </main>
 
 <style>
+    main {
+        padding: 0rem 7rem 0rem 7rem;
+    }
+
     li {
         display: grid;
         grid-template-columns: subgrid;

@@ -16,3 +16,9 @@
 		/>
 	{/each}
 </section>
+
+<style>
+	section {
+		padding: 0rem 7rem 0rem 7rem;
+	}
+</style>
