@@ -3,5 +3,5 @@ client: "Q42 & Teylers Museum"
 status: "active"
 years: [2]
 main_link: ""
-dev_link: ""
+dev_link: "https://q42-teylers.netlify.app/"
 tech_stack: ["SvelteKit", "Directus"]
