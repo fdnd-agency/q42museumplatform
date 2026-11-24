@@ -94,17 +94,15 @@
 <style>
     form {
         /*kleuren voor dark mode */
-        --_card-background: var(--color-quiz-card-dark);
-        --_text-color: var(--color-primary);
+        --_text-color: var(--color-text);
         --_feedback-background: var(--color-quiz-answer-selected-inner-dark);
         --_correct-color: var(--color-correct-dark);
         --_incorrect-color: var(--color-incorrect-dark);
-        --_button-background: var(--color-border);
-        --_button-color: var(--color-white);
-        --_button-hover-background: var(--color-button-hover);
-        --_button-active-background: var(--color-white);
+        --_button-background: var(--color-text);
+        --_button-color: var(--color-primary);
+        --_button-active-background: var(--color-accent);
+        --_focus-color: var(--color-accent);
 
-        background: var(--_card-background);
         color: var(--_text-color);
         padding: 1.5rem;
         font-size: 1rem;
@@ -142,7 +140,6 @@
     }
 
     output p {
-        background: var(--_feedback-background);
         border: 3px solid;
         padding: 1rem;
     }
@@ -156,7 +153,7 @@
     }
 
     button {
-        margin-top: 1rem;
+        margin-block: 1rem;
         padding: 0.75rem 2rem;
         background: var(--_button-background);
         color: var(--_button-color);
@@ -166,8 +163,8 @@
         border: 3px solid var(--_button-background);
 
         &:hover {
-            background: var(--_button-hover-background);
-            border-color: var(--_button-hover-background);
+            background: transparent;
+            color: var(--_text-color);
         }
 
         &:active {
@@ -177,7 +174,7 @@
         }
 
         &:focus-visible {
-            outline: 3px solid var(--color-accent);
+            outline: 3px solid var(--_focus-color);
             outline-offset: 2px;
         }
     }
@@ -185,15 +182,13 @@
     /*kleuren voor light mode */
     @media (prefers-color-scheme: light) {
         form {
-            --_card-background: var(--color-quiz-card-light);
-            --_text-color: var(--color-quiz-answer-border-light);
+            --_text-color: var(--color-primary);
             --_feedback-background: var(--color-primary);
             --_correct-color: var(--color-correct-light);
             --_incorrect-color: var(--color-incorrect-light);
-            --_button-background: var(--color-quiz-answer-border-light);
-            --_button-color: var(--color-primary);
-            --_button-hover-background: var(--color-white);
-            --_button-active-background: var(--color-accent);
+            --_button-background: var(--color-primary);
+            --_button-color: var(--color-text);
+            --_focus-color: var(--color-primary);
         }
     }
 </style>
