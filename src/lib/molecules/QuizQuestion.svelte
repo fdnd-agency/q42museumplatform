@@ -1,6 +1,6 @@
 <script>
     import { AnswerOption } from "$lib/index.js";
-    import {tick} from "svelte";
+    import { tick } from "svelte";
 
     // Krijgt één vraag binnen, met de antwoorden en de uitleg, het nummer van de vraag, en de letter die zonder javascript is gecontroleerd
     let { question, number, checkedKey = "" } = $props();
@@ -31,16 +31,14 @@
     const checkAnswer = async (event) => {
         // Voorkomt dat de pagina ververst
         event.preventDefault();
-         
-        
 
         chosenKey = new FormData(event.currentTarget).get(
             `question-${question.id}`,
         );
-        
+
         // wacht tot de uitleg op het scherm staat
         await tick();
-        // scrollt naar de output 
+        // scrollt naar de output
         output.scrollIntoView({ behavior: "smooth", block: "nearest" });
     };
 
@@ -50,7 +48,6 @@
         if (isCorrect) return "correct";
         return "incorrect";
     };
-
 </script>
 
 <form method="POST" action="?/checkAnswer" onsubmit={checkAnswer}>
@@ -72,7 +69,9 @@
         {/each}
     </fieldset>
 
-    <button type="submit" name="questionId" value={question.id}>Controleer</button>
+    <button type="submit" name="questionId" value={question.id}
+        >Controleer</button
+    >
 
     <output bind:this={output}>
         {#if isAnswered}
@@ -105,11 +104,11 @@
         --_focus-color: var(--color-accent);
 
         color: var(--_text-color);
-        padding: 1.5rem;
         font-size: 1rem;
-        line-height: 1.6;
+        line-height: 1.5;
         font-family: inter;
-        margin: 1rem;
+        margin: var(--spacing-s);
+        padding-inline: var(--spacing-m);
     }
 
     header {
