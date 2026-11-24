@@ -6,7 +6,7 @@
 
 <style>
     h3 {
-        font-size: var(--heading-display);
+        font-size: var(--heading-year);
         background-color: transparent;
         font-family: larken;
     }
