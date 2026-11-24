@@ -41,4 +41,10 @@
         grid-column: 1;
         width: 100%;
     }
+
+    @media (prefers-color-scheme: light) {
+        .timeline {
+            background-color: var(--color-primary);
+        }
+    }
 </style>

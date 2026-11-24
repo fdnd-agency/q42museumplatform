@@ -23,4 +23,9 @@
         background-color: transparent;
         margin-top: var(--spacing-xs);
     }
+    @media (prefers-color-scheme: light) {
+        time {
+            color: var(--color-text);
+        }
+    }
 </style>

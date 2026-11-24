@@ -55,4 +55,11 @@
         max-inline-size: 100%;
         block-size: auto;
     }
+    @media (prefers-color-scheme: light) {
+        h2,
+        p,
+        blockquote {
+            color: var(--color-primary);
+        }
+    }
 </style>
