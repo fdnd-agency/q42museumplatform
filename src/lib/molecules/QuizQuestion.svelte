@@ -95,6 +95,7 @@
     form {
         /*kleuren voor dark mode */
         --_text-color: var(--color-text);
+        --_muted-color: var(--color-text-muted);
         --_feedback-background: var(--color-quiz-answer-selected-inner-dark);
         --_correct-color: var(--color-correct-dark);
         --_incorrect-color: var(--color-incorrect-dark);
@@ -117,6 +118,7 @@
         gap: 1rem;
         margin-bottom: 1rem;
         font-weight: 700;
+        color: var(--_muted-color);
     }
 
     legend {
@@ -183,6 +185,7 @@
     @media (prefers-color-scheme: light) {
         form {
             --_text-color: var(--color-primary);
+            --_muted-color: var(--color-border);
             --_feedback-background: var(--color-primary);
             --_correct-color: var(--color-correct-light);
             --_incorrect-color: var(--color-incorrect-light);
