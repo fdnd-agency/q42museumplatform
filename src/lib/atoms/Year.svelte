@@ -8,6 +8,7 @@
     h3 {
         font-size: var(--heading-display);
         background-color: transparent;
+        font-family: larken;
     }
 
     time {
