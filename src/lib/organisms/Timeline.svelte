@@ -22,7 +22,10 @@
                             question={era.question}
                             number={index + 1}
                             // Geeft het gecontroleerde antwoord alleen door aan de vraag waar het bij hoort
-                            checkedKey={checkedAnswer?.questionId === era.question.id ? checkedAnswer.chosenKey : ""}
+                            checkedKey={checkedAnswer?.questionId ===
+                            era.question.id
+                                ? checkedAnswer.chosenKey
+                                : ""}
                         />
                     </div>
                 {/if}
@@ -38,13 +41,17 @@
         grid-column: 1 /-1;
         list-style: none;
         color: var(--color-text);
+        border-top: 1px solid var(--_line-color);
     }
+
     ol {
+        --_line-color: var(--color-border);
         display: grid;
         grid-template-columns: 1fr 5rem 1fr;
         margin: var(--spacing-l);
         list-style: none;
     }
+
     .timeline {
         grid-column: 2;
         background-color: var(--color-text);
@@ -57,5 +64,11 @@
     .quiz {
         grid-column: 3;
         width: 100%;
+    }
+
+    @media (prefers-color-scheme: light) {
+        ol {
+            --_line-color: hsl(var(--text-h), var(--text-s), 67%);
+        }
     }
 </style>
