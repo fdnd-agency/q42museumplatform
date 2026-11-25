@@ -17,7 +17,6 @@
         margin-inline: auto;
         text-align: center;
         overflow-wrap: anywhere;
-        font-variant-numeric: tabular-nums;
         line-height: 0.9;
         color: var(--color-primary);
         background-color: transparent;
