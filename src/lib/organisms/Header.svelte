@@ -1,7 +1,7 @@
 <script>
-	import Logo from '../../atoms/header/Logo.svelte';
-	import NavLink from '../../atoms/header/NavLink.svelte';
-	import Score from '../../molecules/header/Score.svelte';
+	import Logo from '../atoms/Logo.svelte';
+	import NavLink from '../atoms/NavLink.svelte';
+	import Score from '../molecules/Score.svelte';
 </script>
 
 <header>

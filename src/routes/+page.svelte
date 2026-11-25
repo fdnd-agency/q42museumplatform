@@ -1,6 +1,6 @@
 <script>
-	import Header from '$lib/components/organisms/header/Header.svelte';
-	import Hero from '$lib/components/organisms/hero/Hero.svelte';
+	import Header from '$lib/organisms/Header.svelte';
+	import Hero from '$lib/organisms/Hero.svelte';
 	import { Quiz } from '$lib/index.js'
 	import Timeline from '$lib/organisms/Timeline.svelte'
 
