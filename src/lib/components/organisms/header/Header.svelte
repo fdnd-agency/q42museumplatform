@@ -27,6 +27,11 @@
     	background-color: var(--color-primary);
     	border-bottom: 2px solid var(--color-border);
 
+		@media (prefers-color-scheme: light) {
+			background-color: var(--color-text);
+			border-bottom: 2px solid hsl(39, 51%, 67%);
+		}
+
 		@media (max-width: 48rem) {
 			padding: 1rem 1.5rem;
 		}

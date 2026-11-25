@@ -12,6 +12,10 @@
         width: max-content;
         padding: 1rem 1rem 1rem 1rem;
         border-radius: 0.3rem;
+
+        @media (prefers-color-scheme: light) {
+            outline : 1.5px solid hsl(196, 37%, 40%);
+        }
     }
 
     p {
@@ -22,10 +26,17 @@
         margin: 0;
         width: max-content;
 
+        @media (prefers-color-scheme: light) {
+            color: var(--color-primary);
+        }
     }
 
     p:nth-of-type(2) {
         font-weight: 700;
         color: var(--color-accent);
+
+        @media (prefers-color-scheme: light) {
+            color: var(--color-primary);
+        }
     }
 </style>

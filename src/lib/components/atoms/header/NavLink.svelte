@@ -11,6 +11,11 @@
         padding: 0.6rem;
         border-bottom: 2px solid var(--color-accent);
 
+        @media (prefers-color-scheme: light) {
+            color: var(--color-primary);
+            border-bottom: 2px solid var(--color-primary);
+        }
+
         @media (max-width: 48rem) {
             display: none;
         }
