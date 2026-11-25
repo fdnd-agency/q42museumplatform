@@ -6,8 +6,9 @@
 
 <style>
     h3 {
-        font-size: var(--heading-display);
+        font-size: var(--heading-year);
         background-color: transparent;
+        font-family: larken;
     }
 
     time {
@@ -16,10 +17,14 @@
         margin-inline: auto;
         text-align: center;
         overflow-wrap: anywhere;
-        font-variant-numeric: tabular-nums;
         line-height: 0.9;
         color: var(--color-primary);
         background-color: transparent;
         margin-top: var(--spacing-xs);
+    }
+    @media (prefers-color-scheme: light) {
+        time {
+            color: var(--color-text);
+        }
     }
 </style>

@@ -29,12 +29,15 @@
     h2 {
         font-size: var(--heading-h2);
         color: var(--color-text);
+        font-family: larken;
     }
+
     p {
         line-height: 1.4;
         font-size: var(--body-body);
         color: var(--color-text);
         margin: 1lh;
+        font-family: inter;
     }
     article {
         margin: var(--spacing-s);
@@ -44,10 +47,19 @@
         margin: var(--spacing-m);
         font-size: var(--heading-quote);
         color: var(--color-text);
+        font-family: larken;
+        font-style: italic;
     }
     img {
         object-fit: cover;
         max-inline-size: 100%;
         block-size: auto;
+    }
+    @media (prefers-color-scheme: light) {
+        h2,
+        p,
+        blockquote {
+            color: var(--color-primary);
+        }
     }
 </style>
