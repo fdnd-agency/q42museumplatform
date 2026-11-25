@@ -20,6 +20,10 @@
 		font-family: Larken, Arial, Helvetica, sans-serif;
 		padding: 1rem 10rem;
 
+        @media (prefers-color-scheme: light) {
+            color: var(--color-primary);
+        }
+
 		@media (max-width: 48rem) {
 			flex-direction: column;
 			padding: 1rem 1.5rem;
