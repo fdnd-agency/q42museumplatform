@@ -12,9 +12,16 @@ export async function load() {
     const { data: eras } = await res.json();
     const { data: questions } = await questionsResponse.json();
 
-    console.log(eras)
+    // Gaat langs elk tijdvak en maakt een nieuwe lijst
+    const erasWithQuestion = eras.map((era) => {
+        // Zoekt in alle vragen de vraag die bij dit tijdvak hoort
+        const question = questions.find((quizQuestion) => quizQuestion.exhibit_section_id === era.id)
 
-    return { eras, questions }
+        // Geeft het tijdvak terug met de vraag erbij
+        return { ...era, question }
+    })
+
+    return { eras: erasWithQuestion }
 }
 
 export const actions = {

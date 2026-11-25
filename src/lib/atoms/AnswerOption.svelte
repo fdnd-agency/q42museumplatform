@@ -13,14 +13,15 @@
 <style>
     label {
         /*kleuren voor dark mode */
-        --_border-color: var(--color-quiz-answer-border-dark);
-        --_selected-border-color: var(--color-primary);
-        --_selected-background: var(--color-quiz-answer-selected-inner-dark);
-        --_hover-background: var(--color-quiz-answer-hover);
-        --_correct-color: var(--color-correct-dark);
-        --_incorrect-color: var(--color-incorrect-dark);
-        --_letter-background: var(--color-border);
-        --_letter-color: var(--color-white);
+        --_border-color: var(--color-text);
+        --_selected-background: var(--color-text);
+        --_selected-color: var(--color-primary);
+        --_hover-background: color-mix(in srgb, var(--color-text) 15%, transparent);
+        --_correct-color: var(--color-correct-light);
+        --_incorrect-color: var(--color-incorrect-light);
+        --_letter-background: var(--color-text);
+        --_letter-color: var(--color-primary);
+        --_focus-color: var(--color-accent);
 
         position: relative;
         display: flex;
@@ -32,9 +33,17 @@
         font-family: inter;
         font-weight: 700;
 
-        &:has(input:checked) {
-            border-color: var(--_selected-border-color);
+        &:hover {
+            background: var(--_hover-background);
+        }
+
+        &:has(input:checked),
+        &:active {
+            border-color: var(--_selected-background);
             background: var(--_selected-background);
+            color: var(--_selected-color);
+            --_letter-background: var(--_selected-color);
+            --_letter-color: var(--_selected-background);
         }
 
         &.correct:has(input:checked) {
@@ -48,17 +57,8 @@
         }
 
         &:has(input:focus) {
-            outline: 3px solid var(--color-accent);
+            outline: 3px solid var(--_focus-color);
             outline-offset: 2px;
-        }
-
-        &:hover {
-            background: var(--_hover-background);
-        }
-
-        &:active {
-            background: var(--color-primary);
-            color: var(--color-white);
         }
     }
 
@@ -84,14 +84,13 @@
     /*kleuren voor light mode */
     @media (prefers-color-scheme: light) {
         label {
-            --_border-color: var(--color-quiz-answer-border-light);
-            --_selected-border-color: var(--color-accent);
+            --_border-color: var(--color-primary);
             --_selected-background: var(--color-primary);
-            --_hover-background: var(--color-border);
-            --_correct-color: var(--color-correct-light);
-            --_incorrect-color: var(--color-incorrect-light);
-            --_letter-background: var(--color-quiz-answer-border-light);
-            --_letter-color: var(--color-primary);
+            --_selected-color: var(--color-text);
+            --_hover-background: color-mix(in srgb, var(--color-primary) 15%, transparent);
+            --_letter-background: var(--color-primary);
+            --_letter-color: var(--color-text);
+            --_focus-color: var(--color-primary);
         }
     }
 </style>
