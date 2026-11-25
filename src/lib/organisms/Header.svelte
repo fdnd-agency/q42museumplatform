@@ -5,13 +5,11 @@
 </script>
 
 <header>
-	<article>
-		<Logo />
-	</article>
-	<article>
+	<Logo />
+	<div>
 		<NavLink />
 		<Score />
-	</article>
+	</div>
 </header>
 
 <style>
@@ -37,7 +35,7 @@
 		}
 	}
 
-	article {
+	div {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
